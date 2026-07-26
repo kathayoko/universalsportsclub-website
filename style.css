@@ -118,7 +118,7 @@ nav a.nav-cta.active{color:#FAFAFA;}
 }
 #mobile-menu.open{transform:translateY(0);}
 #mobile-menu a{
-  font-family:'Fraunces',serif; font-size:clamp(24px,7vw,32px); font-weight:500;
+  font-family:'Space Grotesk', sans-serif; font-size:clamp(24px,7vw,32px); font-weight:500;
 }
 #mobile-menu a.active{color:var(--ember);}
 #mobile-menu a.nav-cta{
@@ -226,7 +226,7 @@ section{
 }
 .city-row:last-child{border-bottom:1px solid var(--line);}
 .city-row .city{
-  font-family:'Fraunces',serif;
+  font-family:'Space Grotesk', sans-serif;
   font-size:clamp(22px,2.6vw,32px);
 }
 .city-row .status{
