@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Universal Sports Club</title>
-<meta name="description" content="Universal Sports Club is a community-first sport club to harness the lessons we've learned through sports, which are applicable for every area of life.">
+<title>Connect — Universal Sports Club</title>
+<meta name="description" content="Follow Universal Sports Club on Instagram and Strava, or reach us by email.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
       <li><a href="philosophy.html">Philosophy</a></li>
       <li><a href="origin.html">Origin</a></li>
       <li><a href="schedule.html">Schedule</a></li>
-      <li><a href="connect.html">Connect</a></li>
+      <li><a href="connect.html" class="active">Connect</a></li>
       <li><a href="join.html" class="nav-cta">Join</a></li>
     </ul>
   </nav>
@@ -32,16 +32,33 @@
   <a href="philosophy.html">Philosophy</a>
   <a href="origin.html">Origin</a>
   <a href="schedule.html">Schedule</a>
-  <a href="connect.html">Connect</a>
+  <a href="connect.html" class="active">Connect</a>
   <a href="join.html" class="nav-cta">Join</a>
 </div>
 
-<section id="hero">
-  <div class="eyebrow">Universal Sports Club</div>
-  <h1>Sport taught you lessons you'd <em>never</em> learn any other way.</h1>
-  <p class="lede">A community-first sport club, born in Zurich endurance sports. We train to get better and to carry what sport teaches into everything else.</p>
-  <a href="join.html" class="btn-hero" style="margin-top:44px;">Join the club</a>
-  <div class="eyebrow" style="margin-top:20px;">Weekly Run Club in your city</div>
+<section id="connect" class="reveal">
+  <div class="eyebrow">Become a better athlete</div>
+  <h2>Become a better person.</h2>
+  <div class="connect-links">
+    <a href="https://instagram.com/universalsports.club/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://strava.app.link/ljltwpUB54b" target="_blank" rel="noopener">Strava</a>
+    <a href="mailto:contact@universalsportsclub.com">Email</a>
+  </div>
+
+  <div class="schedule-block" style="border-top:none; text-align:left; max-width:440px; margin:60px auto 0;">
+    <h3>Get the newsletter</h3>
+    <p>Occasional updates — new cities, sessions, and what we're building next.</p>
+    <form class="inline-form" onsubmit="return handleNewsletterSignup(event)">
+      <input type="hidden" name="_subject" value="Newsletter Signup — USC">
+      <input type="email" name="email" placeholder="Your email" required>
+      <button class="btn btn-outline" type="submit">Sign up</button>
+    </form>
+  </div>
+</section>
+
+<section class="reveal page-cta">
+  <h2>Ready to see what sport can teach you?</h2>
+  <a href="join.html" class="btn-hero">Join the club</a>
 </section>
 
 <footer>

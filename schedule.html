@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule — Universal Sports Club</title>
+<meta name="description" content="Universal Sports Club's Run Club schedule in Zürich, and how to request a new city or become a host.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <a href="index.html" class="logo">UNIVERSAL <span>SPORTS</span> CLUB</a>
+  <nav>
+    <ul>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="origin.html">Origin</a></li>
+      <li><a href="schedule.html" class="active">Schedule</a></li>
+      <li><a href="connect.html">Connect</a></li>
+      <li><a href="join.html" class="nav-cta">Join</a></li>
+    </ul>
+  </nav>
+  <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div id="mobile-menu">
+  <a href="philosophy.html">Philosophy</a>
+  <a href="origin.html">Origin</a>
+  <a href="schedule.html" class="active">Schedule</a>
+  <a href="connect.html">Connect</a>
+  <a href="join.html" class="nav-cta">Join</a>
+</div>
+
+<section id="schedule" class="reveal">
+  <div class="eyebrow">Schedule</div>
+  <h2>We're connecting ambitious people through sport, city by city, across the world, to achieve their goals faster and become better human beings.</h2>
+
+  <div class="city-row active">
+    <div class="city">Zurich</div>
+    <div class="status">Active — Run Club</div>
+    <div class="meta">Weekly</div>
+  </div>
+
+  <div class="schedule-block">
+    <h3>Your city is missing?</h3>
+    <p>Tell us where you are and we'll be there shortly.</p>
+    <form class="inline-form" onsubmit="return handleCityRequest(event)">
+      <input type="hidden" name="_subject" value="City Request — USC">
+      <input type="text" name="requested_city" placeholder="Your city" required>
+      <button class="btn btn-outline" type="submit">Drop it here</button>
+    </form>
+  </div>
+
+  <div class="schedule-block">
+    <h3>You want to become a host?</h3>
+    <p>Hosts run their city's chapter from within the community.</p>
+    <button class="btn btn-outline" onclick="toggleForm('host-form')" type="button">Become a host</button>
+    <form id="host-form" class="form-grid" onsubmit="return handleSubmit(event,'host')">
+      <input type="hidden" name="_subject" value="New Host Application — USC">
+      <label><span>Name</span><input type="text" name="name" required></label>
+      <label><span>Email</span><input type="email" name="email" required></label>
+      <label><span>City you'd host</span><input type="text" name="host_city" required></label>
+      <label class="full"><span>Why you?</span><textarea name="reason" rows="3"></textarea></label>
+      <button class="btn btn-solid" type="submit">Submit application</button>
+      <p class="form-note full">Apply for hosting, and we'll follow up directly with you.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Universal Sports Club</span>
+  <span>Zurich / Universal</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

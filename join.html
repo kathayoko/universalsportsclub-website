@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join — Universal Sports Club</title>
+<meta name="description" content="Join Universal Sports Club — book a trial session or apply for membership in Zürich.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id="site-header">
+  <a href="index.html" class="logo">UNIVERSAL <span>SPORTS</span> CLUB</a>
+  <nav>
+    <ul>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="origin.html">Origin</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="connect.html">Connect</a></li>
+      <li><a href="join.html" class="nav-cta active">Join</a></li>
+    </ul>
+  </nav>
+  <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div id="mobile-menu">
+  <a href="philosophy.html">Philosophy</a>
+  <a href="origin.html">Origin</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="connect.html">Connect</a>
+  <a href="join.html" class="nav-cta active">Join</a>
+</div>
+
+<section id="join" class="reveal">
+  <div class="eyebrow">Get involved</div>
+  <h2>Two ways to join. Come try it, or come all in.</h2>
+
+  <div class="join-card">
+    <div class="num">01</div>
+    <h3>Trial session</h3>
+    <p>Come run with us once, no strings attached. Meet the group, feel the energy, see if it's for you.</p>
+    <button class="btn btn-outline" onclick="toggleForm('trial-form')" type="button">Book a trial</button>
+  </div>
+
+  <div class="join-card">
+    <div class="num">02</div>
+    <h3>Join the club</h3>
+    <p>Become a member of Universal Sports Club to access the next version of you.</p>
+    <button class="btn btn-outline" onclick="toggleForm('member-form')" type="button">Join the club</button>
+  </div>
+
+  <form id="trial-form" class="form-grid" onsubmit="return handleSubmit(event,'trial')">
+    <input type="hidden" name="_subject" value="New Trial Session Request — USC">
+    <label><span>Name</span><input type="text" name="name" required></label>
+    <label><span>Email</span><input type="email" name="email" required></label>
+    <label class="full"><span>Preferred day/time</span><input type="text" name="preferred_time" placeholder="e.g. Tuesday evening"></label>
+    <button class="btn btn-solid" type="submit">Send</button>
+    <p class="form-note full">We'll reply with the next available trial slot in your city.</p>
+  </form>
+
+  <form id="member-form" class="form-grid" onsubmit="return handleSubmit(event,'member')">
+    <input type="hidden" name="_subject" value="New Membership Application — USC">
+    <label><span>Name</span><input type="text" name="name" required></label>
+    <label><span>Email</span><input type="email" name="email" required></label>
+    <label><span>City</span><input type="text" name="city" value="Zurich"></label>
+    <label><span>Main sport</span><input type="text" name="main_sport" placeholder="Running, triathlon, ..."></label>
+    <label class="full"><span>Why do you want to join?</span><textarea name="reason" rows="3"></textarea></label>
+    <button class="btn btn-solid" type="submit">Submit application</button>
+    <p class="form-note full">Apply for a membership, and we'll follow up directly with you.</p>
+  </form>
+</section>
+
+<footer>
+  <span>© 2026 Universal Sports Club</span>
+  <span>Zurich / Universal</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
