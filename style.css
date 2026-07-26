@@ -301,8 +301,8 @@ section{
 .btn-hero{
   display:inline-flex; align-items:center; gap:12px;
   background:var(--ember); color:#FAFAFA;
-  font-family:'Inter',sans-serif; font-weight:600;
-  font-size:15px; letter-spacing:0.02em;
+  font-family:'IBM Plex Mono',monospace; font-weight:500;
+  font-size:14px; letter-spacing:0.06em; text-transform:uppercase;
   padding:20px 34px; border-radius:100px;
   width:fit-content;
   transition:gap 0.25s ease, background 0.25s ease, transform 0.15s ease;
