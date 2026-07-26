@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Universal Sports Club</title>
-  <meta name="description" content="Privacy Policy for Universal Sports Club.">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Universal Sports Club</title>
+<meta name="description" content="Privacy Policy for Universal Sports Club.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <!-- Header / Navigation matching your existing structure -->
-    <a href="index.html" class="logo">UNIVERSAL SPORTS <span>CLUB</span></a>
-    <nav>
-      <a href="philosophy.html">Philosophy</a>
-      <a href="origin.html">Origin</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="connect.html">Connect</a>
-      <a href="join.html" class="cta-button">Join Us</a>
-    </nav>
-  </header>
+<header id="site-header">
+  <a href="index.html" class="logo">UNIVERSAL SPORTS <span>CLUB</span></a>
+  <nav>
+    <ul>
+      <li><a href="philosophy.html">Philosophy</a></li>
+      <li><a href="origin.html">Origin</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="connect.html">Connect</a></li>
+      <li><a href="join.html" class="nav-cta">Join</a></li>
+    </ul>
+  </nav>
+  <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
-  <main style="max-width: 800px; margin: 0 auto; padding: 60px 20px;">
-    <h2 style="font-size: clamp(26px, 3.6vw, 44px); margin-bottom: 32px;">Privacy Policy</h2>
-    
-    <p style="margin-bottom: 20px; line-height: 1.6;">
-      At Universal Sports Club, we respect your privacy and are committed to protecting any personal information you share with us.
-    </p>
+<div id="mobile-menu">
+  <a href="philosophy.html">Philosophy</a>
+  <a href="origin.html">Origin</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="connect.html">Connect</a>
+  <a href="join.html" class="nav-cta">Join</a>
+</div>
 
-    <h3 style="margin-top: 30px; margin-bottom: 12px;">Information We Collect</h3>
-    <p style="margin-bottom: 20px; line-height: 1.6;">
-      We only collect basic personal details (such as your name and email address) when you voluntarily submit them through our contact or membership forms.
-    </p>
+<section class="reveal" style="max-width:760px;">
+  <div class="eyebrow" style="margin-bottom:18px;">Legal</div>
+  <h2 style="font-size:clamp(26px,3.6vw,44px); margin-bottom:32px;">Privacy Policy</h2>
 
-    <h3 style="margin-top: 30px; margin-bottom: 12px;">How We Use Information</h3>
-    <p style="margin-bottom: 20px; line-height: 1.6;">
-      Your details are strictly used to communicate with you regarding club schedules, events, and membership updates. We do not sell or share your data with third parties.
-    </p>
+  <div style="opacity:0.82; line-height:1.7;">
+    <p style="margin-bottom:28px;">At Universal Sports Club, we respect your privacy and are committed to protecting any personal information you share with us.</p>
 
-    <h3 style="margin-top: 30px; margin-bottom: 12px;">Contact Us</h3>
-    <p style="margin-bottom: 20px; line-height: 1.6;">
-      If you have questions about our privacy practices, please get in touch via our <a href="connect.html">Connect page</a>.
-    </p>
-  </main>
+    <h3 style="font-size:22px; margin-bottom:12px; font-weight:500;">Information We Collect</h3>
+    <p style="margin-bottom:28px;">We only collect basic personal details (such as your name and email address) when you voluntarily submit them through our contact or membership forms.</p>
 
-  <footer>
-    <span>&copy; Universal Sports Club</span>
-    <span>Zurich / Universal</span>
-    <a href="privacy-policy.html">Privacy Policy</a>
-  </footer>
+    <h3 style="font-size:22px; margin-bottom:12px; font-weight:500;">How We Use Information</h3>
+    <p style="margin-bottom:28px;">Your details are strictly used to communicate with you regarding club schedules, events, and membership updates. We do not sell or share your data with third parties.</p>
 
+    <h3 style="font-size:22px; margin-bottom:12px; font-weight:500;">Contact Us</h3>
+    <p style="margin-bottom:28px;">If you have questions about our privacy practices, please get in touch via our Connect page.</p>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Universal Sports Club</span>
+  <span>Zurich / Universal</span>
+  <a href="privacy-policy.html">Privacy Policy</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
