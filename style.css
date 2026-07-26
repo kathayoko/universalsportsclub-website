@@ -164,11 +164,11 @@ section{
 
 /* ---------- manifesto ---------- */
 #manifesto{
-  background:var(--ink);
-  color:var(--paper);
+  background:var(--paper);
+  color:var(--ink);
   border-radius:2px;
 }
-#manifesto .eyebrow{color:var(--paper); opacity:0.5;}
+#manifesto .eyebrow{color:var(--ink); opacity:0.5;}
 #manifesto h2{
   font-size:clamp(28px,4vw,52px);
   max-width:20ch;
